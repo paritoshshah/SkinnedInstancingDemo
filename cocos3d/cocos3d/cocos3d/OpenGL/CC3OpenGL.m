@@ -281,7 +281,8 @@ static NSObject<CC3OpenGLDelegate>* _delegate = nil;
 			  @"OpenGL ES permits drawing a maximum of 65536 indexed vertices, and supports only"
 			  @" GL_UNSIGNED_SHORT or GL_UNSIGNED_BYTE types for vertex indices");
 #endif
-	glDrawElements(drawMode, len, type, indicies);
+	//glDrawElements(drawMode, len, type, indicies);
+    glDrawElementsInstancedEXT(drawMode, len, type, indicies, 20*8);
 	LogGLErrorTrace(@"glDrawElements(%@, %u, %@, %p)", NSStringFromGLEnum(drawMode), len, NSStringFromGLEnum(type), indicies);
 	CC_INCREMENT_GL_DRAWS(1);
 }

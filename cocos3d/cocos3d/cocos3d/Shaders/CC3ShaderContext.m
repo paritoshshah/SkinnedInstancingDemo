@@ -162,7 +162,7 @@
 		_uniformOverrides = nil;
 		_uniformOverridesByName = nil;
 		_shouldEnforceCustomOverrides = YES;
-		_shouldEnforceVertexAttributes = YES;
+		_shouldEnforceVertexAttributes = NO;
 	}
 	return self;
 }

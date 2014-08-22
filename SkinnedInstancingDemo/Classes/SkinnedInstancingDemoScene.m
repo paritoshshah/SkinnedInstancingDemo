@@ -13,7 +13,7 @@
 #import "CC3Camera.h"
 #import "CC3Light.h"
 #import "CC3UtilityMeshNodes.h"
-
+#import "CC3Billboard.h"
 
 @implementation SkinnedInstancingDemoScene
 
@@ -62,9 +62,24 @@
 	// nodes in the resource, remove unwanted nodes from the resource (eg- extra cameras),
 	// or extract only specific nodes from the resource to add them directly to the scene,
 	// instead of adding the entire contents.
-	CC3ResourceNode* rezNode = [CC3PODResourceNode nodeFromFile: @"hello-world.pod"];
-	[self addChild: rezNode];
 	
+    CC3ResourceNode* j = [[CC3PODResourceNode nodeFromFile: @"NPC_soldier_LOD01.POD"] copy];
+    GLuint walkTrack = [j addAnimationFromPODFile:@"NPC_soldier_anim_walking.POD"];
+    CC3Node* soldier = [j getNodeNamed:@"npc_soldier"];
+    [soldier addTexture:[CC3Texture textureFromFile:@"NPC_soldier_dif_LOD01.png"]];
+    
+    CC3Billboard *bb = [CC3Billboard nodeWithBillboard:[CCSprite spriteWithImageNamed:@"ter_level03_sand_dif.png"]];
+    bb.scale = cc3v(0.02, 0.02, 0.02);
+    [self addChild:bb];
+    
+    j.scale = cc3v(0.075, 0.075, 0.075);
+    j.location = cc3v(-4.5, 3.5, 0.0);
+    [self addChild: j];
+    
+    [j runAction:[[CC3ActionAnimate actionWithDuration:1.0 onTrack:walkTrack] repeatForever]];
+    
+
+    
 	// Or, if you don't need to modify the resource node at all before adding its content,
 	// you can simply use the following as a shortcut, instead of the previous lines.
 //	[self addContentFromPODFile: @"hello-world.pod"];
@@ -153,17 +168,17 @@
 	// using a couple of actions...
 	
 	// Fetch the 'hello, world' object that was loaded from the POD file and start it rotating
-	CC3MeshNode* helloTxt = (CC3MeshNode*)[self getNodeNamed: @"Hello"];
-	[helloTxt runAction: [CC3ActionRotateForever actionWithRotationRate: cc3v(0, 30, 0)]];
+//	CC3MeshNode* helloTxt = (CC3MeshNode*)[self getNodeNamed: @"Hello"];
+//	[helloTxt runAction: [CC3ActionRotateForever actionWithRotationRate: cc3v(0, 30, 0)]];
 	
 	// To make things a bit more appealing, set up a repeating up/down cycle to
 	// change the color of the text from the original red to blue, and back again.
-	GLfloat tintTime = 8.0f;
-	CCColorRef startColor = helloTxt.color;
-	CCColorRef endColor = CCColorRefFromCCC4F(ccc4f(0.2, 0.0, 0.8, 1.0));
-	CCActionInterval* tintDown = [CCActionTintTo actionWithDuration: tintTime color: endColor];
-	CCActionInterval* tintUp   = [CCActionTintTo actionWithDuration: tintTime color: startColor];
-	[helloTxt runAction: [[CCActionSequence actionOne: tintDown two: tintUp] repeatForever]];
+//	GLfloat tintTime = 8.0f;
+//	CCColorRef startColor = helloTxt.color;
+//	CCColorRef endColor = CCColorRefFromCCC4F(ccc4f(0.2, 0.0, 0.8, 1.0));
+//	CCActionInterval* tintDown = [CCActionTintTo actionWithDuration: tintTime color: endColor];
+//	CCActionInterval* tintUp   = [CCActionTintTo actionWithDuration: tintTime color: startColor];
+//	[helloTxt runAction: [[CCActionSequence actionOne: tintDown two: tintUp] repeatForever]];
 }
 
 /**
@@ -235,7 +250,7 @@
 
 	// Move the camera to frame the scene. The resulting configuration of the camera is output as
 	// an [info] log message, so you know where the camera needs to be in order to view your scene.
-	[self.activeCamera moveWithDuration: 3.0 toShowAllOf: self withPadding: 0.5f];
+//	[self.activeCamera moveWithDuration: 3.0 toShowAllOf: self withPadding: 0.5f];
 
 	// Uncomment this line to draw the bounding box of the scene.
 //	self.shouldDrawWireframeBox = YES;

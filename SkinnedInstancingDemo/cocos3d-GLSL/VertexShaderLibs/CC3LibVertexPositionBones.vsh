@@ -64,6 +64,7 @@
 #import "CC3LibConstants.vsh"
 #import "CC3LibModelMatrices.vsh"
 
+#extension GL_EXT_draw_instanced: enable
 
 #define MAX_BONES_PER_BATCH		12
 #define MAX_BONES_PER_VERTEX	4
@@ -129,5 +130,10 @@ void positionVertex() {
 		if (u_cc3VertexHasTangent) vtxTangent = normalize(vtxTangent);	// TODO - rescale without having to normalize
 	}
 
-	gl_Position = u_cc3MatrixModelViewProj * vtxPosition;
+    float xOffset = float(gl_InstanceIDEXT / 8) * 20.0;
+    float zOffset = float(gl_InstanceIDEXT - (gl_InstanceIDEXT / 8) * 8) * 50.0;
+    vec4 offset = vec4(xOffset, 0, zOffset, 0);
+
+    
+	gl_Position = u_cc3MatrixModelViewProj * (vtxPosition + offset);
 }
