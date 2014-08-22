@@ -282,7 +282,7 @@ static NSObject<CC3OpenGLDelegate>* _delegate = nil;
 			  @" GL_UNSIGNED_SHORT or GL_UNSIGNED_BYTE types for vertex indices");
 #endif
 	//glDrawElements(drawMode, len, type, indicies);
-    glDrawElementsInstancedEXT(drawMode, len, type, indicies, 20*8);
+    glDrawElementsInstancedEXT(drawMode, len, type, indicies, 20*30);
 	LogGLErrorTrace(@"glDrawElements(%@, %u, %@, %p)", NSStringFromGLEnum(drawMode), len, NSStringFromGLEnum(type), indicies);
 	CC_INCREMENT_GL_DRAWS(1);
 }

@@ -72,8 +72,8 @@
     bb.scale = cc3v(0.02, 0.02, 0.02);
     [self addChild:bb];
     
-    j.scale = cc3v(0.075, 0.075, 0.075);
-    j.location = cc3v(-4.5, 3.5, 0.0);
+    j.scale = cc3v(0.025, 0.025, 0.025);
+    j.location = cc3v(-4.75, -3.5, 0.0);
     [self addChild: j];
     
     [j runAction:[[CC3ActionAnimate actionWithDuration:1.0 onTrack:walkTrack] repeatForever]];
