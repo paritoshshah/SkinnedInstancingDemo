@@ -343,5 +343,29 @@
  */
 -(void) nodeSelected: (CC3Node*) aNode byTouchEvent: (uint) touchType at: (CGPoint) touchPoint {}
 
+-(void) startMovingCamera { _cameraMoveStartLocation = self.activeCamera.location; }
+
+-(void) stopMovingCamera {}
+
+/** Set this parameter to adjust the rate of camera movement during a pinch gesture. */
+#define kCamPinchMovementUnit		125
+
+-(void) moveCameraBy:  (CGFloat) aMovement {
+	CC3Camera* cam = self.activeCamera;
+    
+	// Convert to a logarithmic scale, zero is backwards, one is unity, and above one is forward.
+	GLfloat camMoveDist = logf(aMovement) * kCamPinchMovementUnit;
+    
+	CC3Vector moveVector = CC3VectorScaleUniform(cam.globalForwardDirection, camMoveDist);
+	cam.location = CC3VectorAdd(_cameraMoveStartLocation, moveVector);
+    
+    if (cam.location.z < 1.0) {
+        cam.location = cc3v(cam.location.x, cam.location.y, 1.0);
+    }
+    
+    LogInfo(@"cam.location: %.2f, %.2f, %.2f", cam.location.x, cam.location.y, cam.location.z);
+}
+
+
 @end
 
