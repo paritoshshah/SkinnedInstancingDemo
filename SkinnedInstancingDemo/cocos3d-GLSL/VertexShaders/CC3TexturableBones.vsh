@@ -66,11 +66,15 @@ void vertexToEyeSpace() {
 }
 
 #extension GL_EXT_draw_instanced: enable
+uniform vec2 u_cc3SceneTime;
+
 
 void main() {
     vertexToEyeSpace();
     
-    float xOffset = float(gl_InstanceIDEXT / 30) * 0.5;
+    float direction = gl_InstanceIDEXT > 299 ? -1.0 : 1.0;
+    
+    float xOffset = float(gl_InstanceIDEXT / 30) * 0.25 + direction * float(u_cc3SceneTime[0]) / 10.0 - direction * 2.0;
     float yOffset = float(gl_InstanceIDEXT - (gl_InstanceIDEXT / 30) * 30) * 0.25;
     vec4 offset = vec4(xOffset, yOffset, 0, 0);
     

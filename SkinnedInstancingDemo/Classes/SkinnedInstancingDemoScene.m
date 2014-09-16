@@ -53,7 +53,7 @@
 	// Create a light, place it back and to the left at a specific
 	// position (not just directional lighting), and add it to the scene
 	CC3Light* lamp = [CC3Light nodeWithName: @"Lamp"];
-	lamp.location = cc3v( -2.0, 0.0, 0.0 );
+	lamp.location = cc3v( -2.5, 0.0, 0.0 );
 	lamp.isDirectionalOnly = NO;
 	[cam addChild: lamp];
 	
@@ -73,7 +73,7 @@
     [self addChild:bb];
     
     j.scale = cc3v(0.025, 0.025, 0.025);
-    j.location = cc3v(-4.75, -3.5, 0.0);
+    j.location = cc3v(-2.0, -3.5, 0.0);
     [self addChild: j];
     
     [j runAction:[[CC3ActionAnimate actionWithDuration:1.0 onTrack:walkTrack] repeatForever]];
