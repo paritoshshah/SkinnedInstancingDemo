@@ -322,11 +322,10 @@
 		DE20309E19A7D7B800A92DE6 /* CC3VertexArrayMeshModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE20309D19A7D7B800A92DE6 /* CC3VertexArrayMeshModel.m */; };
 		DE2030A119A7D7B800A92DE6 /* CC3World.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2030A019A7D7B800A92DE6 /* CC3World.m */; };
 		DE2030A519A7D7B800A92DE6 /* LICENSE_cocos3d.txt in Resources */ = {isa = PBXBuildFile; fileRef = DE2030A419A7D7B800A92DE6 /* LICENSE_cocos3d.txt */; };
-		DE2030B819A7D7F700A92DE6 /* NPC_soldier_anim_walking.POD in Resources */ = {isa = PBXBuildFile; fileRef = DE2030B519A7D7F700A92DE6 /* NPC_soldier_anim_walking.POD */; };
 		DE2030B919A7D7F700A92DE6 /* NPC_soldier_dif_LOD01.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2030B619A7D7F700A92DE6 /* NPC_soldier_dif_LOD01.png */; };
 		DE2030BA19A7D7F700A92DE6 /* NPC_soldier_LOD01.POD in Resources */ = {isa = PBXBuildFile; fileRef = DE2030B719A7D7F700A92DE6 /* NPC_soldier_LOD01.POD */; };
-		DE2030D619A7F2DC00A92DE6 /* ter_level02_islandGoal_dif.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2030D519A7F2DC00A92DE6 /* ter_level02_islandGoal_dif.png */; };
-		DE2030D819A7F8FB00A92DE6 /* ter_level03_sand_dif.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2030D719A7F8FB00A92DE6 /* ter_level03_sand_dif.png */; };
+		DEE869731A5F5411008FF5DC /* ter_level03_sand_dif.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE869721A5F5411008FF5DC /* ter_level03_sand_dif.png */; };
+		DEE869751A5F545F008FF5DC /* ter_level02_islandGoal_dif.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE869741A5F545F008FF5DC /* ter_level02_islandGoal_dif.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -956,11 +955,11 @@
 		DE2030A219A7D7B800A92DE6 /* CCNodeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CCNodeController.h; path = cocos3d/deprecated/CCNodeController.h; sourceTree = "<group>"; };
 		DE2030A319A7D7B800A92DE6 /* ControllableCCLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ControllableCCLayer.h; path = cocos3d/deprecated/ControllableCCLayer.h; sourceTree = "<group>"; };
 		DE2030A419A7D7B800A92DE6 /* LICENSE_cocos3d.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE_cocos3d.txt; sourceTree = "<group>"; };
-		DE2030B519A7D7F700A92DE6 /* NPC_soldier_anim_walking.POD */ = {isa = PBXFileReference; lastKnownFileType = file; name = NPC_soldier_anim_walking.POD; path = ../../../git/dragons3d/Assets/characters/NPC_soldiers/NPC_soldier_anim_walking.POD; sourceTree = "<group>"; };
 		DE2030B619A7D7F700A92DE6 /* NPC_soldier_dif_LOD01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NPC_soldier_dif_LOD01.png; path = ../../../git/dragons3d/Assets/characters/NPC_soldiers/NPC_soldier_dif_LOD01.png; sourceTree = "<group>"; };
 		DE2030B719A7D7F700A92DE6 /* NPC_soldier_LOD01.POD */ = {isa = PBXFileReference; lastKnownFileType = file; name = NPC_soldier_LOD01.POD; path = ../../../git/dragons3d/Assets/characters/NPC_soldiers/NPC_soldier_LOD01.POD; sourceTree = "<group>"; };
-		DE2030D519A7F2DC00A92DE6 /* ter_level02_islandGoal_dif.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ter_level02_islandGoal_dif.png; path = ../../../Desktop/ter_level02_islandGoal_dif.png; sourceTree = "<group>"; };
-		DE2030D719A7F8FB00A92DE6 /* ter_level03_sand_dif.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ter_level03_sand_dif.png; path = ../../../Desktop/ter_level03_sand_dif.png; sourceTree = "<group>"; };
+		DEE869711A5F53FF008FF5DC /* NPC_soldier_anim_walking.POD */ = {isa = PBXFileReference; lastKnownFileType = file; name = NPC_soldier_anim_walking.POD; path = Resources/NPC_soldier_anim_walking.POD; sourceTree = "<group>"; };
+		DEE869721A5F5411008FF5DC /* ter_level03_sand_dif.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ter_level03_sand_dif.png; path = Resources/ter_level03_sand_dif.png; sourceTree = "<group>"; };
+		DEE869741A5F545F008FF5DC /* ter_level02_islandGoal_dif.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ter_level02_islandGoal_dif.png; path = Resources/ter_level02_islandGoal_dif.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1057,10 +1056,10 @@
 		DE202CEA19A7D7B300A92DE6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DE2030D719A7F8FB00A92DE6 /* ter_level03_sand_dif.png */,
-				DE2030D519A7F2DC00A92DE6 /* ter_level02_islandGoal_dif.png */,
-				DE2030B519A7D7F700A92DE6 /* NPC_soldier_anim_walking.POD */,
+				DEE869741A5F545F008FF5DC /* ter_level02_islandGoal_dif.png */,
+				DEE869711A5F53FF008FF5DC /* NPC_soldier_anim_walking.POD */,
 				DE2030B619A7D7F700A92DE6 /* NPC_soldier_dif_LOD01.png */,
+				DEE869721A5F5411008FF5DC /* ter_level03_sand_dif.png */,
 				DE2030B719A7D7F700A92DE6 /* NPC_soldier_LOD01.POD */,
 				DE202CEB19A7D7B300A92DE6 /* hello-world.pod */,
 				DE202CF419A7D7B300A92DE6 /* Info.plist */,
@@ -2150,6 +2149,7 @@
 				DE202D5D19A7D7B400A92DE6 /* CC3SingleTextureReflect.fsh in Resources */,
 				DE202D7619A7D7B400A92DE6 /* CC3LibVertexPositionNoBones.vsh in Resources */,
 				DE202D0719A7D7B300A92DE6 /* Icon-60.png in Resources */,
+				DEE869751A5F545F008FF5DC /* ter_level02_islandGoal_dif.png in Resources */,
 				DE202D7219A7D7B400A92DE6 /* CC3LibSingleTexture.vsh in Resources */,
 				DE202D6E19A7D7B400A92DE6 /* CC3LibIlluminatedMaterial.vsh in Resources */,
 				DE202D3F19A7D7B300A92DE6 /* CC3BumpMapObjectSpaceAlphaTest.fsh in Resources */,
@@ -2197,7 +2197,6 @@
 				DE202D4719A7D7B300A92DE6 /* CC3ClipSpaceSingleTexture.fsh in Resources */,
 				DE202CFF19A7D7B300A92DE6 /* Icon-50.png in Resources */,
 				DE202D3419A7D7B300A92DE6 /* CC3LibSingleTexture2D.fsh in Resources */,
-				DE2030D619A7F2DC00A92DE6 /* ter_level02_islandGoal_dif.png in Resources */,
 				DE202D2C19A7D7B300A92DE6 /* CC3LibLightProbeIllumination.fsh in Resources */,
 				DE202D8519A7D7B400A92DE6 /* CC3TexturableRigidBones.vsh in Resources */,
 				DE202D5B19A7D7B400A92DE6 /* CC3SingleTextureAlphaTest.fsh in Resources */,
@@ -2205,7 +2204,7 @@
 				DE202D6819A7D7B400A92DE6 /* CC3LibDefaultPrecision.vsh in Resources */,
 				DE202D0119A7D7B300A92DE6 /* Icon-50@2x.png in Resources */,
 				DE202D4B19A7D7B400A92DE6 /* CC3NoTexture.fsh in Resources */,
-				DE2030D819A7F8FB00A92DE6 /* ter_level03_sand_dif.png in Resources */,
+				DEE869731A5F5411008FF5DC /* ter_level03_sand_dif.png in Resources */,
 				DE202D6C19A7D7B400A92DE6 /* CC3LibEnvironmentReflection.vsh in Resources */,
 				DE202D5919A7D7B400A92DE6 /* CC3SingleTexture.fsh in Resources */,
 				DE202D1119A7D7B300A92DE6 /* Icon-76@2x.png in Resources */,
@@ -2215,7 +2214,6 @@
 				DE202D7019A7D7B400A92DE6 /* CC3LibModelMatrices.vsh in Resources */,
 				DE202D3A19A7D7B300A92DE6 /* CC3LibTexturedPointSprite.fsh in Resources */,
 				DE202D6419A7D7B400A92DE6 /* CC3LibCameraPosition.vsh in Resources */,
-				DE2030B819A7D7F700A92DE6 /* NPC_soldier_anim_walking.POD in Resources */,
 				DE202D4319A7D7B300A92DE6 /* CC3BumpMapTangentSpaceAlphaTest.fsh in Resources */,
 				DE202D4D19A7D7B400A92DE6 /* CC3NoTextureAlphaTest.fsh in Resources */,
 				DE202D3219A7D7B300A92DE6 /* CC3LibSingleSidedFragmentColor.fsh in Resources */,
@@ -2530,7 +2528,7 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PROVISIONING_PROFILE = "CE59C2E1-6348-4FDD-B581-BECB658AC66C";
+				PROVISIONING_PROFILE = "fd14fc02-be93-4092-8961-0af0c1573fd3";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALID_ARCHS = "$(ARCHS_STANDARD_32_BIT)";
@@ -2543,7 +2541,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_NS_ASSERTIONS = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PROVISIONING_PROFILE = "CE59C2E1-6348-4FDD-B581-BECB658AC66C";
+				PROVISIONING_PROFILE = "fd14fc02-be93-4092-8961-0af0c1573fd3";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -2766,6 +2764,7 @@
 				DE2030AA19A7D7B800A92DE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE2030AB19A7D7B800A92DE6 /* Build configuration list for PBXNativeTarget "cocos2d" */ = {
 			isa = XCConfigurationList;
@@ -2774,6 +2773,7 @@
 				DE2030AD19A7D7B800A92DE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE2030AE19A7D7B800A92DE6 /* Build configuration list for PBXNativeTarget "cocos3d" */ = {
 			isa = XCConfigurationList;
@@ -2782,6 +2782,7 @@
 				DE2030B019A7D7B800A92DE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
