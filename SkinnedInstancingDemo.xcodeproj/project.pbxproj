@@ -323,7 +323,6 @@
 		DE2030A119A7D7B800A92DE6 /* CC3World.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2030A019A7D7B800A92DE6 /* CC3World.m */; };
 		DE2030A519A7D7B800A92DE6 /* LICENSE_cocos3d.txt in Resources */ = {isa = PBXBuildFile; fileRef = DE2030A419A7D7B800A92DE6 /* LICENSE_cocos3d.txt */; };
 		DE2030B919A7D7F700A92DE6 /* NPC_soldier_dif_LOD01.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2030B619A7D7F700A92DE6 /* NPC_soldier_dif_LOD01.png */; };
-		DE2030BA19A7D7F700A92DE6 /* NPC_soldier_LOD01.POD in Resources */ = {isa = PBXBuildFile; fileRef = DE2030B719A7D7F700A92DE6 /* NPC_soldier_LOD01.POD */; };
 		DEE869731A5F5411008FF5DC /* ter_level03_sand_dif.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE869721A5F5411008FF5DC /* ter_level03_sand_dif.png */; };
 		DEE869751A5F545F008FF5DC /* ter_level02_islandGoal_dif.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE869741A5F545F008FF5DC /* ter_level02_islandGoal_dif.png */; };
 /* End PBXBuildFile section */
@@ -956,10 +955,10 @@
 		DE2030A319A7D7B800A92DE6 /* ControllableCCLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ControllableCCLayer.h; path = cocos3d/deprecated/ControllableCCLayer.h; sourceTree = "<group>"; };
 		DE2030A419A7D7B800A92DE6 /* LICENSE_cocos3d.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE_cocos3d.txt; sourceTree = "<group>"; };
 		DE2030B619A7D7F700A92DE6 /* NPC_soldier_dif_LOD01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NPC_soldier_dif_LOD01.png; path = ../../../git/dragons3d/Assets/characters/NPC_soldiers/NPC_soldier_dif_LOD01.png; sourceTree = "<group>"; };
-		DE2030B719A7D7F700A92DE6 /* NPC_soldier_LOD01.POD */ = {isa = PBXFileReference; lastKnownFileType = file; name = NPC_soldier_LOD01.POD; path = ../../../git/dragons3d/Assets/characters/NPC_soldiers/NPC_soldier_LOD01.POD; sourceTree = "<group>"; };
 		DEE869711A5F53FF008FF5DC /* NPC_soldier_anim_walking.POD */ = {isa = PBXFileReference; lastKnownFileType = file; name = NPC_soldier_anim_walking.POD; path = Resources/NPC_soldier_anim_walking.POD; sourceTree = "<group>"; };
 		DEE869721A5F5411008FF5DC /* ter_level03_sand_dif.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ter_level03_sand_dif.png; path = Resources/ter_level03_sand_dif.png; sourceTree = "<group>"; };
 		DEE869741A5F545F008FF5DC /* ter_level02_islandGoal_dif.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ter_level02_islandGoal_dif.png; path = Resources/ter_level02_islandGoal_dif.png; sourceTree = "<group>"; };
+		DEE869761A6F2A8B008FF5DC /* NPC_soldier_LOD01.POD */ = {isa = PBXFileReference; lastKnownFileType = file; path = NPC_soldier_LOD01.POD; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1056,11 +1055,11 @@
 		DE202CEA19A7D7B300A92DE6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DEE869761A6F2A8B008FF5DC /* NPC_soldier_LOD01.POD */,
 				DEE869741A5F545F008FF5DC /* ter_level02_islandGoal_dif.png */,
 				DEE869711A5F53FF008FF5DC /* NPC_soldier_anim_walking.POD */,
 				DE2030B619A7D7F700A92DE6 /* NPC_soldier_dif_LOD01.png */,
 				DEE869721A5F5411008FF5DC /* ter_level03_sand_dif.png */,
-				DE2030B719A7D7F700A92DE6 /* NPC_soldier_LOD01.POD */,
 				DE202CEB19A7D7B300A92DE6 /* hello-world.pod */,
 				DE202CF419A7D7B300A92DE6 /* Info.plist */,
 				DE202D1B19A7D7B300A92DE6 /* fps_images.png */,
@@ -2189,7 +2188,6 @@
 				DE202CF919A7D7B300A92DE6 /* Icon-29@2x.png in Resources */,
 				DE202D5519A7D7B400A92DE6 /* CC3PointSpritesAlphaTest.fsh in Resources */,
 				DE202D4119A7D7B300A92DE6 /* CC3BumpMapTangentSpace.fsh in Resources */,
-				DE2030BA19A7D7F700A92DE6 /* NPC_soldier_LOD01.POD in Resources */,
 				DE202CF719A7D7B300A92DE6 /* Icon-29.png in Resources */,
 				DE202CFD19A7D7B300A92DE6 /* Icon-40@2x.png in Resources */,
 				DE202D1E19A7D7B300A92DE6 /* fps_images-hd.png in Resources */,
